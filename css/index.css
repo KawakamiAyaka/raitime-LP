@@ -73,18 +73,34 @@ body{
     
     .MainWrap{
         position: relative;
-        /* display: flex; */
+        display: flex;
+
+        .introduction{
+            display: flex;
+
+            .station{
+                width: 214px;
+                height: 110px;
+                margin-left: 60px;
+            }
+
+            .explanation{
+
+            }
+
+            .woman{
+                width: 240px;
+                height: 300px;
+                transform: scale(-1, 1);
+            }
+        }
+
     
         .rail{
             width: 1240px;
             height: 3200px;
-            margin: 100px auto;
+            margin: 0 auto;
             background: url(../img/rail.png) no-repeat;
-        }
-        
-        img{
-            position: absolute;
-            margin-left: 60px;
         }
     }    
 }
