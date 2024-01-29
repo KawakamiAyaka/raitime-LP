@@ -20,7 +20,7 @@ body{
         width: 720px;
         height: 360px;
         margin-top: 87px;
-        margin-left: 10%;
+        margin-left: 40px;
     }
 
     .CatchCopy{
@@ -46,7 +46,7 @@ body{
     justify-content: end;
 
     .scroll{
-        margin-right: 12%;
+        margin-right: 6%;
         margin-top: 100px;
 
         p{
@@ -64,9 +64,6 @@ body{
 
 
 .MainBox{
-    position: relative;
-    border: #D5EDDD solid 1px;
-
     .rail{
         position: absolute;
         width: 1240px;
@@ -81,6 +78,7 @@ body{
         position: relative;
         display: flex;
         background: #D5EDDD;
+        margin-top: 14px;
 
         .introduction{
             display: flex;
@@ -93,13 +91,14 @@ body{
 
             .explanation{
                 h2{
-                    margin-top: 160px;
+                    margin-top: 170px;
                     margin-left: 5%;
                     font-size: 32px;
 
                     span{
-                        font-size: 48px;
+                        font-size: 40px;
                         color: #46A667;
+                        border-bottom: 8px double #46A667;
                     }
                 }
                 p{
@@ -115,9 +114,216 @@ body{
                 width: 240px;
                 height: 300px;
                 transform: scale(-1, 1);
-                margin-left: 5%;
                 margin-top: 200px;
             }
         }
-    }    
+    } 
+
+    .function{
+        position: relative;
+
+        > img{
+            position: absolute;
+            z-index: 2;
+            width: 214px;
+            height: 110px;
+            margin: 150px 0 auto 60px;
+        }
+
+        h2{
+            position: absolute;
+            font-size: 32px;
+            margin-left: 24%;
+            margin-top: 170px;
+
+            span{
+                font-size: 40px;
+                color: #46A667;
+                border-bottom: 2px solid #46A667;
+            }
+        }
+
+        .FirstBox{
+            display: flex;
+            width: 100%;
+            height: 750px;
+            padding-top: 410px;
+
+            .countdown{
+                width: 440px;
+                height: 190px;
+                border: #000 2px solid;
+                background: #FFFBF6;
+                text-align: center;
+                margin: 0 100px 0 300px;
+    
+                h3{
+                    font-size: 32px;
+                    margin-top: 20px;
+                }
+    
+                p{
+                    font-size: 20px;
+                    margin-top: -10px;
+                }
+    
+                .rectangle{
+                    width: 100%;
+                    height: 25px;
+                    background: #46A667;
+                }
+    
+                .subheading{
+                    font-size: 20px;
+                    margin-top: 5px;
+                }
+    
+                .Sentence{
+                    font-size: 14px;
+                    margin-top: 5px;
+                }
+    
+                img{
+                    width: 250px;
+                    height: 504px;
+                    margin-top: 50px;
+                }
+            }
+
+            .notification{
+                width: 440px;
+                height: 190px;
+                border: #000 2px solid;
+                background: #FFFBF6;
+                text-align: center;
+    
+                h3{
+                    font-size: 32px;
+                    margin-top: 20px;
+                }
+    
+                p{
+                    font-size: 20px;
+                    margin-top: -10px;
+                }
+    
+                .rectangle{
+                    width: 100%;
+                    height: 25px;
+                    background: #46A667;
+                }
+    
+                .subheading{
+                    font-size: 20px;
+                    margin-top: 5px;
+                }
+    
+                .Sentence{
+                    font-size: 14px;
+                    margin-top: 5px;
+                }
+    
+                img{
+                    width: 250px;
+                    height: 504px;
+                    margin-top: 50px;
+                }
+            }
+        }
+        .LastBox{
+            display: flex;
+            width: 100%;
+            height: 880px;
+            padding-top: 150px;
+            margin-left: 300px;
+            gap: 100px;
+
+            .TransferPlan{
+                width: 440px;
+                height: 190px;
+                border: #000 2px solid;
+                background: #FFFBF6;
+                text-align: center;
+    
+                h3{
+                    font-size: 32px;
+                    margin-top: 20px;
+                }
+    
+                p{
+                    font-size: 20px;
+                    margin-top: -10px;
+                }
+    
+                .rectangle{
+                    width: 100%;
+                    height: 25px;
+                    background: #46A667;
+                }
+    
+                .subheading{
+                    font-size: 20px;
+                    margin-top: 5px;
+                }
+    
+                .Sentence{
+                    font-size: 14px;
+                    margin-top: 5px;
+                }
+    
+                img{
+                    width: 250px;
+                    height: 504px;
+                    margin-top: 50px;
+                }
+            }
+            .SectionRegistration{
+                width: 440px;
+                height: 190px;
+                border: #000 2px solid;
+                background: #FFFBF6;
+                text-align: center;
+    
+                h3{
+                    font-size: 32px;
+                    margin-top: 20px;
+                }
+    
+                p{
+                    font-size: 20px;
+                    margin-top: -10px;
+                }
+    
+                .rectangle{
+                    width: 100%;
+                    height: 25px;
+                    background: #46A667;
+                }
+    
+                .subheading{
+                    font-size: 20px;
+                    margin-top: 5px;
+                }
+    
+                .Sentence{
+                    font-size: 14px;
+                    margin-top: 5px;
+                }
+    
+                img{
+                    width: 250px;
+                    height: 504px;
+                    margin-top: 50px;
+                }
+            }
+        }
+    }   
+}
+
+footer{
+    width: 100%;
+    height: 580px;
+    background: #D5EDDD;
+
+    
 }
