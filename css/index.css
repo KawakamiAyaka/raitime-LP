@@ -1,7 +1,8 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: 'M PLUS 1p', sans-serif;}
+    font-family: 'M PLUS 1p', sans-serif;
+}
 
 
 
@@ -64,12 +65,15 @@ body{
 
 
 .MainBox{
+    position: relative;
     .rail{
         position: absolute;
-        width: 1240px;
+        width: 100px;
         height: 2640px;
-        margin-left: 100px;
-        margin-top: 260px;
+        left: 100px;
+        top: 260px;
+        /* margin-left: 100px; */
+        /* margin-top: 260px; */
         background: url(../img/rail.png) no-repeat;
         z-index: 1;
     }
@@ -102,7 +106,6 @@ body{
                     }
                 }
                 p{
-                    width: 750px;
                     font-size: 14px;
                     margin-top: 40px;
                     margin-left: 5%;
@@ -145,18 +148,18 @@ body{
 
         .FirstBox{
             display: flex;
-            width: 100%;
+            margin-left: 100px;
+            width: calc(100% - 100px);
             height: 750px;
             padding-top: 410px;
-
+            justify-content: space-evenly;
+            
             .countdown{
                 width: 440px;
                 height: 190px;
                 border: #000 2px solid;
                 background: #FFFBF6;
                 text-align: center;
-                margin: 0 100px 0 300px;
-    
                 h3{
                     font-size: 32px;
                     margin-top: 20px;
@@ -232,12 +235,12 @@ body{
         }
         .LastBox{
             display: flex;
-            width: 100%;
+            margin-left: 100px;
+            width: calc(100% - 100px);
             height: 880px;
             padding-top: 150px;
-            margin-left: 300px;
-            gap: 100px;
-
+            /* margin-left: 300px; */
+            justify-content: space-evenly;
             .TransferPlan{
                 width: 440px;
                 height: 190px;
@@ -325,35 +328,49 @@ body{
 
 
 footer{
-    width: 100%;
+    padding-left: 100px;
+    width: calc(100% - 100px);
     height: 550px;
     background: #D5EDDD;
     display: flex;
-    
+    justify-content: center;
+    position: relative;
+
+    .station{
+        width: 214px;
+        height: 110px;
+        top: 210px;
+        left: 60px;
+        /* margin: 210px 0 auto 60px; */
+        position: absolute;
+        z-index: 1;
+    }
     .FooterStation{
         display: flex;
-
-        .station{
-            width: 214px;
-            height: 110px;
-            margin: 210px 0 auto 60px;
-        }
-        
         .man{
             width: 280px;
             height: 370px;
-            margin-top: 30%;
-            margin-left: 5%;
+            margin-top: 50%;
+            /* margin-left: 50%; */
+            position: relative;
+            z-index: 2;
         }
     }
 
     .NowDownload{
+        width: 550px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 100px;
         
         .download{
             display: flex;
-            margin-top: 30%;
-            margin-left: 30%;
-            gap: 30px;
+            /* margin-top: 30%; */
+            /* margin-left: 30%; */
+            /* gap: 30px; */
 
             h3{
                 width: 9em;
@@ -369,9 +386,9 @@ footer{
 
         .DownloadBtn{
             display: flex;
-            margin-top: 10%;
-            margin-left: 20%;
-            gap: 30px;
+            /* margin-top: 10%; */
+            /* margin-left: 20%; */
+            /* gap: 30px; */
 
             .Apple{
                 width: 240px;
